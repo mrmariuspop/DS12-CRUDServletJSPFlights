@@ -5,10 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+	<%@ include file="error.css"%>
+</style>
 <title>Error</title>
 </head>
 <body>
-<center><font color="red" size="20">Error!</font></center>
-<center><font size="15"><c:out value="${requestScope.err}"/></font></center>
+<form>
+<p id="error" ><span>Error!</span><p>
+<p id="errormessage"><span><c:out value="${requestScope.err}"/></span></p>
+</form>
 </body>
 </html>
